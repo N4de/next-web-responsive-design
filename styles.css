@@ -38,15 +38,88 @@ body{
 }
 
 .wrapper {
-	width: 1192px;
+	max-width: 1192px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
 
 .news-article {
 	box-sizing: border-box;
-	width: 25%;
 	background-color: cyan;
-	padding: 20px;
+	padding: 12px;
+	height: 250px;
+}
+
+.latest-news {
+	padding-top: 24px;
+	margin-bottom: 40px;
+}
+
+.latest-funding {
+	margin-bottom: 40px;
+}
+
+.funding {
+	height: 250px;
+}
+
+.category {
+	height: 250px;
+}
+
+.categories {
+	margin-bottom: 40px;
+}
+
+.latest-deals {
+	margin-bottom: 40px;
+}
+
+.deal {
+	height: 250px;
+}
+
+.quote {
+	height: 300px;
+	background-color: #F6F6F6;
+}
+
+.main-footer {
+	height: 400px;
+	background-color: #131313;
+}
+
+.bottom-footer {
+	background-color: #000000;
+	height: 100px;
+}
+
+
+
+
+.row {
+	margin: -12px;
+}
+
+.col-1 {
+	width: 8.3333333%;
 	display: inline-block;
+}
+
+.col-3 {
+	min-width: 22%;
+	background-color: red;
+	display: inline-block;
+}
+
+.col-4 {
+	min-width: 30%;
+	background-color: yellow;
+	display: inline-block;
+}
+
+@media (min-width: 1024px) {
+	.col-3 {
+		min-width: 22%;
+	}
 }
