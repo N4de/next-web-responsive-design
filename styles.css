@@ -15,26 +15,23 @@ body{
 
 .main-images {
 	padding: 4px;
-	height: 560px;
+	min-height: 560px;
 	background-color: pink;
+	margin-bottom: 40px;
 }
 
 .big-image {
 	box-sizing: border-box;
-	height: 100%;
-	width: 66.66%;
 	background-color: blue;
-	float: left;
 	padding: 4px;
+	height: 100%;
 }
 
 .small-image {
 	box-sizing: border-box;
-	height: 50%;
-	width: 33.33333%;
-	float: left;
 	background-color: red;
 	padding: 4px;
+	height: 50%;
 }
 
 .wrapper {
@@ -107,19 +104,56 @@ body{
 }
 
 .col-3 {
-	min-width: 22%;
 	background-color: red;
-	display: inline-block;
 }
 
 .col-4 {
-	min-width: 30%;
 	background-color: yellow;
-	display: inline-block;
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
+
+	.row {
+	    margin: -10px;
+	}
+
 	.col-3 {
-		min-width: 22%;
+		width: 32.1%;
+		display: inline-block;
+	}
+
+	.col-4 {
+		width: 48.4%;
+		display: inline-block;
+	}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+	
+	.row {
+		margin: -12px;
+	}
+
+	.col-3 {
+		width: 24%;
+		display: inline-block;
+	}
+
+	.col-4 {
+		width: 32.1%;
+		display: inline-block;
+	}
+
+	.small-image {
+		width: 33.33333%;
+		float: left;
+	}
+
+	.big-image {
+		height: 100%;
+		width: 66.66%;
+		float: left;
 	}
 }
