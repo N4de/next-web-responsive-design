@@ -1,9 +1,29 @@
 body{
-	line-height: 20px;
+	line-height: 1.5;
+	font-family: 'ARS Maquette','Helvetica Neue',Arial,sans-serif;
+    font-size: 14px;
 }
 
 a {
 	text-decoration: none;
+}
+
+h2 {
+	font-size: 28px;
+	margin-bottom: 14px;
+}
+
+h5 {
+	font-family: Shentox,sans-serif;
+    font-weight: 500;
+    letter-spacing: .04em;
+    line-height: 1.5;
+}
+
+.story-title {
+	font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
 }
 
 .navbar {
@@ -40,6 +60,12 @@ a {
 	box-sizing: border-box;
 	padding: 4px;
 	height: 30vh;
+}
+
+.centered-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 
 #sec-image1 {
@@ -219,29 +245,235 @@ a {
 
 
 .category {
-	height: 250px;
+    margin-bottom: 24px;
 }
 
 .categories {
 	margin-bottom: 40px;
 }
 
+.category-image {
+	background-position: center center;
+    background-repeat: no-repeat;
+   	background-size: 100% 100%;
+   	padding-top: 75%;
+
+}
+
+#apps-image {
+	background-image: url(https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2017/03/Facebook-Fake-News-368x276.jpg);
+}
+
+.section-latest {
+	background-color: rgba(255,68,34,.06);
+    margin: 2px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-latest-header {
+	padding: 10px 14px 0;
+	display: inline-block;
+}
+
+.section-latest-image {
+	background-color: #000;
+    background-position: center center;
+    background-size: cover;
+    height: 96px;
+    width: 96px;
+}
+
+.section-latest-title {
+	max-height: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.section-latest-link {
+	display: inline-block;
+}
+
+.section-headline {
+	border-bottom: 1px solid #EEE;
+}
+
+.section-headline h4 a {
+	padding: 6px 0 6px 14px;
+}
+
+a::before {
+	background-color: #F42;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 13px;
+    width: 4px;
+}
+
+#section-latest-image-1 {
+	background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/03/Untitled.jpg);
+}
+
 .latest-deals {
 	margin-bottom: 40px;
+}
+
+.deal-card {
+	position: relative;
 }
 
 .deal {
 	height: 250px;
 }
 
-.quote {
-	height: 300px;
+.deal-image {
+    padding-top: 74.5%;
+    margin-bottom: 8px;
+}
+
+.deal-discount {
+	background-image: url(https://cdn1.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+	background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    display: block;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    z-index: 10;
+}
+
+.deal-discount div {
+	-moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: 700;
+    left: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 100%;
+}
+
+.deal-price {
+	line-height: 20px;
+	overflow: hidden;
+    color: #AAA;
+    font-size: 12px;
+    padding-top: 4px;
+    vertical-align: baseline;
+}
+
+.deal-price-old{
+	font-size: 13px;
+	text-decoration: line-through;
+    margin-right: 4px;
+}
+
+.deal-price-new {
+    font-size: 16px;
+	color: #555;
+}
+
+#deal-image1 {
+	background-image: url(https://cdnp1.stackassets.com/395575e58325e59a04f70ab769f7647c7187d6fe/store/eeb9cfc427d1a228f87896b5488f82f3cafa7fc92577d46d4f315320532c/sale_7011_image-1.jpg);
+}
+
+footer {
+	text-align: center;
+}
+
+.footer-quote {
+	padding: 3em 0;
 	background-color: #F6F6F6;
 }
 
-.main-footer {
-	height: 400px;
-	background-color: #131313;
+.footer-quote-main {
+	font-size: 56px;
+	color: #F42;
+    font-family: Avalon;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    line-height: 1;
+    margin-bottom: .5em;
+}
+
+.footer-quote-main::after {
+	content: '”';
+}
+
+.footer-quote-main::before {
+	content: '”';
+}
+
+.footer-quote-share {
+	border: 2px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    color: #AAA;
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+.footer-quote-share i {
+	opacity: .25;
+}
+
+.footer-trending {
+    background: #131313;
+    padding: 2.5em 0;
+}
+
+.footer-trending .wrapper {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-trending .block {
+    flex-basis: 33%;
+    display: inline-block;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.footer-trending .block h3 {
+	font-size: 16px;
+    font-weight: 400;
+    color: #aaa;
+    font-family: Shentox,sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-trending .block li span {
+    margin-left: 5px;
+}
+
+.footer-list-item {
+	font-size: 16px;
+    font-family: 'ARS Maquette','Helvetica Neue',Arial,sans-serif;
+    color: #fff;
+}
+
+.footer.links {
+	padding: 3em 0 2em;
+    background: #131313;
+}
+
+.footer-links-social {
+    margin-bottom: 1.5em;
 }
 
 .bottom-footer {
@@ -249,8 +481,24 @@ a {
 	height: 100px;
 }
 
+.icon {
+	background: url(https://cdn1.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1481025313094) 1200px 1200px no-repeat;
+    background-size: 1200px 1200px;
+    width: 16px;
+    height: 16px;
+}
 
+.icon-inline {
+    display: inline-block;
+    margin-right: 3px;
+    position: relative;
+    top: -.1em;
+    vertical-align: middle;
+}
 
+.twitter-icon {
+    background-position: -912px -912px;
+}
 
 .row {
 	margin: -12px;
@@ -267,7 +515,8 @@ a {
 }
 
 .col-4 {
-	background-color: yellow;
+	padding: 12px;
+	box-sizing: border-box;
 }
 
 @media only screen and (min-width: 768px) {
