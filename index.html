@@ -6,31 +6,75 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<!--Breakpoints: 1600, 1024, 768 -->
-	<!-- 
-		1600
-		main images increase in height
-	-->
-	<!--
-		1024
-		logo jumps to top-left
-		main images shrink
-		black bar appears above main images
-		latest news has row of 3 instead of 4
-		one of funding rounds dissapears???
-		categories go to row of 2 from 3
-		deals go to row of 3 from 4
-	 -->
-	 <!--
-		768
-		everything goes to display block except nav and footer
-	  -->
-	<nav class="navbar"></nav>
-	<div class="sec-navbar"></div>
+	<nav class="navbar">
+		<ul class="navbar-menu">
+			<li>
+				<a class="is-active" href="">News</a>
+			</li>
+			<li>
+				<a href="">Conference</a>
+			</li>
+			<li>
+				<a href="">Index</a>
+			</li>
+			<li>
+				<a href="">TQ</a>
+			</li>
+			<li>
+				<a href="">Deals</a>
+			</li>
+			<li>
+				<a href="">Answers</a>
+			</li>
+			<li>
+				<a href="">Tech5</a>
+			</li>
+			<li class="navbar-menu-right">
+				<a href="">Contact</a>
+			</li>
+			<li class="navbar-menu-right">
+				<a href="">Jobs</a>
+			</li>
+			<li class="navbar-menu-right">
+				<a href="">Contribute</a>
+			</li>
+			<li class="navbar-menu-right">
+				<a href="">Advertise</a>
+			</li>
+			<li class="navbar-menu-right">
+				<a href="">Team</a>
+			</li>
+			<li class="navbar-menu-right">
+				<a href="">About</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="navbar-sec">
+		<div class="navbar-dropdown">
+			<a href="">Categories</a>
+		</div>
+		<div class="navbar-countdown">
+			<div class="navbar-countdown-wrapper">
+				<div class="navbar-countdown-time">
+					<a href="">02:12:05:00</a>
+					<div class="navbar-countdown-text">
+						UNTIL PRICES RISE FOR
+					</div>
+					<img  src="https://cdn3.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/misc/conf-ams17-logo-red.svg">
+					<a class="btn" href="">Learn more</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<main>
 		<div class="main-images">
 			<div class="big-image">
-				<div id="main-image"></div>
+				<div id="main-image">
+					<div class="cover-gradient"></div>
+					<div class="cover-logo"></div>
+					<header class="cover-header">
+					</header>
+				</div>
 			</div>
 			<div class="small-image">
 				<div id="sec-image1"></div>
@@ -893,7 +937,7 @@
 				<p class="footer-quote-main">Either write something worth reading or do something worth writing about.</p>
 			</div>
 			<a class="footer-quote-share" href="">
-				<i class="icon twitter-icon icon-inline"></i>
+				<i class="icon icon-twitter icon-inline"></i>
 				Share
 			</a>
 		</div>
@@ -956,11 +1000,83 @@
 		</div>
 		<div class="footer-links">
 			<div class="wrapper">
-				<ul class="footer-links-social"></ul>
-				<ul class="footer-links-menu"></ul>
+				<ul class="footer-links-social">
+					<li>
+						<a href="">
+							<i class="icon icon-facebook-light"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon icon-twitter-light"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon icon-youtube-light"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon icon-instagram-light"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon icon-pinterest-light"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon icon-rss-light"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon icon-mail-light"></i>
+						</a>
+					</li>
+				</ul>
+				<ul class="footer-links-menu">
+					<li>
+						<a href="">Events</a>
+					</li>
+					<li>
+						<a href="">About</a>
+					</li>
+					<li>
+						<a href="">Team</a>
+					</li>
+					<li>
+						<a href="">Advertise</a>
+					</li>
+					<li>
+						<a href="">Contribute</a>
+					</li>
+					<li>
+						<a href="">Jobs</a>
+					</li>
+					<li>
+						<a href="">Contact</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div class="bottom-footer"></div>
+		<div class="footer-bottom">
+			<div class="wrapper">
+				<span>
+					<a href="">
+						<img class="footer-bottom-logo" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
+					</a>
+                    © 2006–2017 The Next Web B.V.
+				</span>
+				<span>Made with <b>♥</b> in Amsterdam.</span>
+				<span>
+                            Powered by
+                            <a href="https://www.maxcdn.com/" ><img class="footer-bottom-logo" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/maxcdn.svg"></a>
+                        </span>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>

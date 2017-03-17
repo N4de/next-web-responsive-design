@@ -6,6 +6,7 @@ body{
 
 a {
 	text-decoration: none;
+    color: #F42;
 }
 
 h2 {
@@ -27,24 +28,136 @@ h5 {
 }
 
 .navbar {
-	line-height: 32px;
-    height: 32px;
 	background: #131313;
 }
 
-.sec-navbar {
+.navbar-sec {
+	box-shadow: 0 0 32px rgba(0,0,0,.15);
+}
+
+.navbar-menu {
+	background: #131313;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    max-height: 32px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-menu:first-child {
+	margin-left: 20px;
+}
+
+.navbar-menu li {
+	float: left;
+	margin-left: 12px;
+}
+
+.navbar-menu li a {
+	color: rgba(255,255,255,.6);
+}
+
+.navbar-menu a.is-active {
+	color: #FFF;
+}
+
+.navbar-menu  li.navbar-menu-right {
+	float: right;
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+.navbar-dropdown {
+	display: inline-block;
+}
+
+.navbar-dropdown a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Shentox,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #AAA;
+    display: inline-block;
+    height: 48px;
+    letter-spacing: .04em;
+    line-height: 1;
+    padding: 18px 10px 0;
+}
+
+.navbar-countdown {
+	position: absolute;
 	height: 48px;
-	background-color: blue;
+	left: 50%;
+	display: inline-block;
+}
+
+.navbar-countdown-wrapper {
+	height: 48px;
+	transform: translateX(-50%);
+}
+
+.navbar-countdown-text {
+	display: inline-block;
+    position: relative;
+    top: 1px;
+    font-family: Shentox,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.navbar-countdown-time {
+	line-height: 46px;
+}
+
+.navbar-countdown-time img {
+	display: inline-block;
+	width: 172px;
+	vertical-align: sub;
+	margin-right: 4px;
+}
+
+.btn {
+	display: inline-block;
+	line-height: 28px;
+	padding: 0 12px;
+	font-size: 11px;
+	background-color: #0CC;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 3px;
+	color: #FFF;
 }
 
 .main-images {
 	margin-bottom: 40px;
+	position: relative;
 }
 
 .big-image {
 	box-sizing: border-box;
 	padding: 4px;
 	height: 30vh;
+}
+
+.cover-header {
+    padding: 16px 12px;
+    z-index: 3;
+    bottom: 4px;
+    left: 4px;
+    position: absolute;
+    right: 4px;
+}
+
+.cover-section {
+
 }
 
 #main-image {
@@ -303,7 +416,7 @@ h5 {
 	padding: 6px 0 6px 14px;
 }
 
-a::before {
+ {
 	background-color: #F42;
     border-radius: 50%;
     content: '';
@@ -328,7 +441,6 @@ a::before {
 }
 
 .deal {
-	height: 250px;
 }
 
 .deal-image {
@@ -392,6 +504,7 @@ a::before {
 
 footer {
 	text-align: center;
+	background: #131313;
 }
 
 .footer-quote {
@@ -474,11 +587,52 @@ footer {
 
 .footer-links-social {
     margin-bottom: 1.5em;
+    background: #131313;
 }
 
-.bottom-footer {
+.footer-links-social li {
+	margin: 0 8px;
+	display: inline-block;
+}
+
+.footer-links-social li a {
+	background: #333;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: block;
+    height: 40px;
+    padding: 12px;
+    text-align: center;
+    width: 40px;
+}
+
+.footer-links-menu li {
+    margin: 0 6px;
+    font-family: Shentox,sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.footer-links-menu li a {
+	color: #AAA;
+}
+
+.footer-bottom {
 	background-color: #000000;
-	height: 100px;
+	padding: 3em 0;
+	color: #AAA;
+	font-size: 13px;
+}
+
+
+.footer-bottom-logo {
+	display: inline-block;
+    height: 9px;
+    margin-right: 1px;
+    vertical-align: baseline;
 }
 
 .icon {
@@ -486,7 +640,10 @@ footer {
     background-size: 1200px 1200px;
     width: 16px;
     height: 16px;
+    display: block;
 }
+
+
 
 .icon-inline {
     display: inline-block;
@@ -496,8 +653,36 @@ footer {
     vertical-align: middle;
 }
 
-.twitter-icon {
+.icon-facebook-light {
+	background-position: -240px -240px;
+}
+
+.icon-twitter {
     background-position: -912px -912px;
+}
+
+.icon-twitter-light {
+    background-position: -928px -928px;
+}
+
+.icon-youtube-light {
+    background-position: -736px -736px;
+}
+
+.icon-instagram-light {
+	background-position: -336px -336px;
+}
+
+.icon-pinterest-light {
+	background-position: -592px -592px;
+}
+
+.icon-rss-light {
+    background-position: -736px -736px;
+}
+
+.icon-mail-light {
+	background-position: -496px -496px;
 }
 
 .row {
@@ -571,6 +756,9 @@ footer {
 	.main-images {
 		height: 75vh;
 	}
+
+
+
 }
 
 
